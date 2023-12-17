@@ -3,7 +3,7 @@ Global styles
 ----------------*/
 
 body {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -18,6 +18,21 @@ html {
   text-decoration: none;
 }
 
+footer {
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+  color: rgba(224, 151, 0, 1);
+}
+
+footer h5 {
+  font-weight: 100;
+}
+
+.nav-bar {
+  margin-left: 20px;
+}
+
 nav li {
   list-style-type: none;
   display: inline;
@@ -26,9 +41,161 @@ nav li {
 }
 
 nav li:hover {
-  color: blue;
+  color: rgba(224, 151, 0, 1);
 }
 
 #current li {
-  color: blue;
+  color: rgba(224, 151, 0, 1);
+}
+
+.title-h1 {
+  padding: 2px;
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+  color: white;
+  background-color: rgba(212, 143, 1, 1);
+}
+
+.exhibition-btn {
+  font-size: 18px;
+  width: 200px;
+  height: 40px;
+  background-color: white;
+  border: 1.5px solid rgba(212, 143, 1, 1);
+  border-radius: 8px;
+  transform: translate(50%, 0);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.exhibition-btn a {
+  color: rgba(212, 143, 1, 1);
+}
+
+.explore-btn {
+  font-size: 18px;
+  width: 200px;
+  height: 40px;
+  background-color: rgba(212, 143, 1, 1);
+  border: 1.5px solid rgba(212, 143, 1, 1);
+  border-radius: 8px;
+  transform: translate(50%, 0);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.explore-btn a {
+  color: white;
+}
+
+.museum-logo img {
+  position: relative;
+  margin-left: 55px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 14px;
+}
+
+h5 {
+  position: relative;
+  text-align: center;
+}
+
+/*----------------------
+home | page styles
+----------------------*/
+
+/*------ Carousel-slider ---------------------*/
+
+.carousel-slider {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel-slider img {
+  width: 100vw;
+  height: auto;
+}
+
+.carousel-slider > div {
+  display: flex;
+  flex-shrink: 0;
+  width: 100%;
+  height: auto;
+  scroll-snap-align: start;
+  scroll-behavior: smooth;
+  justify-content: center;
+  align-items: center;
+  animation: scroll 10s linear infinite;
+}
+
+/*-------------END--------------------------*/
+
+.home-h1 {
+  width: 200px;
+  margin-left: 30px;
+}
+
+.image1 {
+  width: 370px;
+  height: auto;
+  margin-left: 15px;
+}
+
+.image2,
+.image4 {
+  width: 370px;
+  height: auto;
+  margin-left: 15px;
+  margin-top: 50px;
+}
+
+.image3 {
+  width: 350px;
+  height: auto;
+  margin-left: 25px;
+  margin-top: 40px;
+}
+
+.paragraph1,
+.paragraph2,
+.paragraph3,
+.paragraph4 {
+  width: 350px;
+  margin-left: 30px;
+}
+
+/*----------------------
+About | page styles
+----------------------*/
+
+.sub-title {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  width: 300px;
+  margin-left: 50px;
+}
+
+.sub-title p {
+  text-align: center;
+}
+
+.about-img1 img {
+  width: 100vw;
+  height: auto;
+}
+
+.about-img2 img,
+.about-img3 img {
+  width: 360px;
+  height: auto;
+  margin-left: 20px;
+  margin-top: 50px;
 }
