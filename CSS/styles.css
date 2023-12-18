@@ -2,6 +2,13 @@
 Global styles
 ----------------*/
 
+/*--------
+
+Wrap all styles in media query for max-widh 400px?
+
+
+--------*/
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -48,10 +55,10 @@ nav li:hover {
   color: rgba(224, 151, 0, 1);
 }
 
-.title-h1 {
-  padding: 2px;
-  margin-top: 10px;
-  font-size: 14px;
+.title-h1 h1 {
+  padding: 15px;
+  margin-top: 20px;
+  font-size: 25px;
   text-align: center;
   color: white;
   background-color: rgba(212, 143, 1, 1);
@@ -98,6 +105,7 @@ nav li:hover {
 
 p {
   font-size: 14px;
+  line-height: 1.5;
 }
 
 h5 {
@@ -135,8 +143,7 @@ home | page styles
   align-items: center;
   animation: scroll 10s linear infinite;
 }
-
-/*-------------END--------------------------*/
+/*---------------------------------------*/
 
 .home-h1 {
   width: 200px;
@@ -199,3 +206,94 @@ About | page styles
   margin-left: 20px;
   margin-top: 50px;
 }
+
+/*----------------END----------------------*/
+
+/*----------------
+Visit page
+--------------------*/
+
+.visit-img1 {
+  margin-top: 20px;
+  width: 100vw;
+  height: auto;
+}
+
+.visit-paragraph1 h5,
+.visit-paragraph2 h5,
+.visit-paragraph4 h5 {
+  text-align: start;
+  margin-bottom: -10px;
+}
+
+.visit-paragraph1,
+.visit-paragraph2,
+.visit-paragraph4 {
+  text-align: start;
+}
+
+.visit-paragraph1,
+.visit-paragraph2,
+.visit-paragraph3,
+.visit-paragraph4,
+.visit-paragraph5 {
+  width: 310px;
+  margin-left: 40px;
+  line-height: 1.5;
+}
+
+.visit-hours {
+  text-align: center;
+  line-height: 1.5;
+}
+
+.visit-hours h5 {
+  margin-bottom: -10px;
+}
+
+.visit-paragraph3 h5,
+.visit-paragraph5 h5 {
+  text-align: end;
+  margin-bottom: -10px;
+}
+
+.visit-paragraph3,
+.visit-paragraph5 {
+  text-align: end;
+  line-height: 1.5;
+}
+
+.visit-paragraph1 {
+  margin-bottom: 50px;
+}
+
+.visit-paragraph2 {
+  margin-top: -15px;
+  margin-bottom: 50px;
+}
+
+.visit-paragraph3,
+.visit-paragraph4,
+.visit-paragraph5 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.parent-visit-img2 {
+  display: grid;
+}
+
+.visit-img2 {
+  width: 300px;
+  height: auto;
+  justify-self: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.visit-img3 {
+  width: 100vw;
+  height: auto;
+}
+
+/*---------------- END --------------------*/
