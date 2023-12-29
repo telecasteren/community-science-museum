@@ -1,13 +1,13 @@
-/*------------
-Global styles
-----------------*/
+/*------------------------------
+Global styles and page specific
+--------------------------------*/
 
-/*--------
+@import url(common-media>600.css);
+@import url(common-media>1000.css);
 
-Wrap all styles in media query for max-widh 400px?
-
-
---------*/
+/*-----------------------------------------------------------------
+Page specific media queries are located underneath each page styles
+--------------------------------------------------------------------*/
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -37,13 +37,13 @@ footer h5 {
 }
 
 .nav-bar {
-  margin-left: 20px;
+  text-align: center;
 }
 
 nav li {
   list-style-type: none;
   display: inline;
-  margin-left: 20px;
+  margin-right: 40px;
   color: black;
 }
 
@@ -71,9 +71,10 @@ nav li:hover {
   background-color: white;
   border: 1.5px solid rgba(212, 143, 1, 1);
   border-radius: 8px;
-  transform: translate(50%, 0);
+  transform: translate(45%, 0);
   margin-top: 50px;
   margin-bottom: 50px;
+  transition: 0.5s;
 }
 
 .exhibition-btn a {
@@ -87,7 +88,7 @@ nav li:hover {
   background-color: rgba(212, 143, 1, 1);
   border: 1.5px solid rgba(212, 143, 1, 1);
   border-radius: 8px;
-  transform: translate(50%, 0);
+  transform: translate(42%, 0);
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -98,19 +99,25 @@ nav li:hover {
 
 .museum-logo img {
   position: relative;
-  margin-left: 55px;
+  margin-left: 50px;
   margin-top: 10px;
   margin-bottom: 20px;
 }
 
 p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
 }
 
 h5 {
   position: relative;
   text-align: center;
+}
+
+.main-section {
+  justify-content: center;
+  display: grid;
+  margin: 5px;
 }
 
 /*----------------------
@@ -147,27 +154,24 @@ home | page styles
 
 .home-h1 {
   width: 200px;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 .image1 {
-  width: 370px;
+  width: 380px;
   height: auto;
-  margin-left: 15px;
 }
 
 .image2,
 .image4 {
-  width: 370px;
+  width: 380px;
   height: auto;
-  margin-left: 15px;
   margin-top: 50px;
 }
 
 .image3 {
-  width: 350px;
+  width: 380px;
   height: auto;
-  margin-left: 25px;
   margin-top: 40px;
 }
 
@@ -176,21 +180,80 @@ home | page styles
 .paragraph3,
 .paragraph4 {
   width: 350px;
-  margin-left: 30px;
+  margin-left: 20px;
 }
+
+/*----------------------
+HOME PAGE media queries
+----------------------*/
+
+@media screen and (min-width: 600px) {
+  .home-h1 {
+    width: 210px;
+    font-size: 25px;
+  }
+
+  .image1,
+  .image2,
+  .image3,
+  .image4 {
+    width: 550px;
+    height: auto;
+  }
+
+  .paragraph1,
+  .paragraph2,
+  .paragraph3,
+  .paragraph4 {
+    width: 500px;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .image1,
+  .image2,
+  .image3,
+  .image4 {
+    width: 950px;
+    height: auto;
+  }
+
+  .paragraph1,
+  .paragraph2,
+  .paragraph3,
+  .paragraph4 {
+    width: 900px;
+    margin-left: 20px;
+  }
+
+  .paragraph1 p,
+  .paragraph2 p,
+  .paragraph3 p,
+  .paragraph4 p {
+    font-size: 26px;
+  }
+
+  .paragraph1 h4,
+  .paragraph2 h4,
+  .paragraph3 h4,
+  .paragraph4 h4 {
+    font-size: 28px;
+  }
+}
+/*-------------------------------*/
 
 /*----------------------
 About | page styles
 ----------------------*/
 
-.sub-title {
+#sub-title {
   margin-top: 35px;
   margin-bottom: 35px;
   width: 300px;
-  margin-left: 50px;
 }
 
-.sub-title p {
+#sub-title p {
   text-align: center;
 }
 
@@ -201,9 +264,8 @@ About | page styles
 
 .about-img2 img,
 .about-img3 img {
-  width: 360px;
+  width: 370px;
   height: auto;
-  margin-left: 20px;
   margin-top: 50px;
 }
 
