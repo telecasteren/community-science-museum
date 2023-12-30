@@ -1,0 +1,100 @@
+/*----------------------
+About | page styles
+----------------------*/
+
+#sub-title {
+  width: 300px;
+  justify-self: center;
+  position: relative;
+}
+
+#sub-title p {
+  text-align: center;
+}
+
+.about-img1 img {
+  width: 100vw;
+  height: auto;
+}
+
+.about-img2,
+.about-img3 {
+  display: grid;
+}
+
+.about-img2 img,
+.about-img3 img {
+  width: 370px;
+  height: auto;
+  margin-top: 50px;
+  justify-self: center;
+}
+
+.about-paragraph1 {
+  margin-top: 30px;
+}
+
+.about-paragraph1,
+.about-paragraph2,
+.about-paragraph3 {
+  width: 350px;
+  margin-left: 20px;
+  display: grid;
+  justify-self: center;
+}
+
+/*---------------- normal styles END----------------------*/
+
+/*----------------------
+Media queries
+----------------------*/
+
+@media screen and (min-width: 600px) {
+  .about-paragraph1,
+  .about-paragraph2,
+  .about-paragraph3 {
+    width: 500px;
+    margin-left: 20px;
+  }
+}
+/*------------------------ min-width 600px END ---------------*/
+
+@media screen and (min-width: 1000px) {
+  #sub-title {
+    width: 610px;
+    justify-self: center;
+    position: relative;
+  }
+
+  #sub-title p {
+    text-align: center;
+    font-size: 26px;
+  }
+
+  .about-paragraph1,
+  .about-paragraph2,
+  .about-paragraph3 {
+    width: 800px;
+    margin-left: 20px;
+    text-align: center;
+  }
+
+  .about-paragraph1 p,
+  .about-paragraph2 p,
+  .about-paragraph3 p {
+    font-size: 24px;
+  }
+
+  .about-paragraph1 h4,
+  .about-paragraph2 h4,
+  .about-paragraph3 h4 {
+    font-size: 28px;
+  }
+
+  .about-img2 img,
+  .about-img3 img {
+    width: 500px;
+    height: auto;
+  }
+}
+/*------------------------ min-width 1000px END ---------------*/

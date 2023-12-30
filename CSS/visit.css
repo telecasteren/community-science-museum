@@ -1,0 +1,88 @@
+/*------------------
+Visit page
+--------------------*/
+
+.visit-img1 {
+  margin-top: 20px;
+  width: 100vw;
+  height: auto;
+}
+
+.visit-paragraph1 h5,
+.visit-paragraph2 h5,
+.visit-paragraph4 h5 {
+  text-align: start;
+  margin-bottom: -10px;
+}
+
+.visit-paragraph1,
+.visit-paragraph2,
+.visit-paragraph4 {
+  text-align: start;
+}
+
+.visit-paragraph1,
+.visit-paragraph2,
+.visit-paragraph3,
+.visit-paragraph4,
+.visit-paragraph5 {
+  width: 310px;
+  margin-left: 40px;
+  line-height: 1.5;
+}
+
+.visit-hours {
+  text-align: center;
+  line-height: 1.5;
+}
+
+.visit-hours h5 {
+  margin-bottom: -10px;
+}
+
+.visit-paragraph3 h5,
+.visit-paragraph5 h5 {
+  text-align: end;
+  margin-bottom: -10px;
+}
+
+.visit-paragraph3,
+.visit-paragraph5 {
+  text-align: end;
+  line-height: 1.5;
+}
+
+.visit-paragraph1 {
+  margin-bottom: 50px;
+}
+
+.visit-paragraph2 {
+  margin-top: -15px;
+  margin-bottom: 50px;
+}
+
+.visit-paragraph3,
+.visit-paragraph4,
+.visit-paragraph5 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.parent-visit-img2 {
+  display: grid;
+}
+
+.visit-img2 {
+  width: 300px;
+  height: auto;
+  justify-self: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.visit-img3 {
+  width: 100vw;
+  height: auto;
+}
+
+/*---------------- END --------------------*/

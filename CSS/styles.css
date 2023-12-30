@@ -1,12 +1,13 @@
 /*------------------------------
-Global styles and page specific
+Global styles
 --------------------------------*/
 
-@import url(common-media>600.css);
-@import url(common-media>1000.css);
+@import url(home.css);
+@import url(about.css);
+@import url(visit.css);
 
 /*-----------------------------------------------------------------
-Page specific media queries are located underneath each page styles
+Media queries at the bottom of each sheet in order
 --------------------------------------------------------------------*/
 
 body {
@@ -18,7 +19,6 @@ body {
 html {
   overflow-x: hidden;
   box-sizing: border-box;
-  background-color: ;
 }
 
 * {
@@ -88,9 +88,9 @@ nav li:hover {
   background-color: rgba(212, 143, 1, 1);
   border: 1.5px solid rgba(212, 143, 1, 1);
   border-radius: 8px;
-  transform: translate(42%, 0);
   margin-top: 50px;
   margin-bottom: 50px;
+  justify-self: center;
 }
 
 .explore-btn a {
@@ -119,243 +119,88 @@ h5 {
   display: grid;
   margin: 5px;
 }
+/*-------------------------------------
 
-/*----------------------
-home | page styles
-----------------------*/
 
-/*------ Carousel-slider ---------------------*/
+--------------------------------
+Media queries for common code
+--------------------------------*/
 
-.carousel-slider {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-}
-
-.carousel-slider img {
-  width: 100vw;
-  height: auto;
-}
-
-.carousel-slider > div {
-  display: flex;
-  flex-shrink: 0;
-  width: 100%;
-  height: auto;
-  scroll-snap-align: start;
-  scroll-behavior: smooth;
-  justify-content: center;
-  align-items: center;
-  animation: scroll 10s linear infinite;
-}
-/*---------------------------------------*/
-
-.home-h1 {
-  width: 200px;
-  margin-left: 20px;
-}
-
-.image1 {
-  width: 380px;
-  height: auto;
-}
-
-.image2,
-.image4 {
-  width: 380px;
-  height: auto;
-  margin-top: 50px;
-}
-
-.image3 {
-  width: 380px;
-  height: auto;
-  margin-top: 40px;
-}
-
-.paragraph1,
-.paragraph2,
-.paragraph3,
-.paragraph4 {
-  width: 350px;
-  margin-left: 20px;
-}
-
-/*----------------------
-HOME PAGE media queries
-----------------------*/
+/*------------- min-width 600px START ------------*/
 
 @media screen and (min-width: 600px) {
-  .home-h1 {
-    width: 210px;
-    font-size: 25px;
+  .title-h1 h1 {
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 38px;
+    text-align: center;
+    color: white;
+    background-color: rgba(212, 143, 1, 1);
   }
 
-  .image1,
-  .image2,
-  .image3,
-  .image4 {
-    width: 550px;
+  .exhibition-btn {
+    font-size: 24px;
+    width: 250px;
+    height: 55px;
+    transform: translate(60%, 0);
+  }
+
+  .exhibition-btn:hover {
+    background-color: rgba(212, 143, 1, 1);
+  }
+
+  .exhibition-btn a:hover {
+    color: white;
+  }
+
+  .explore-btn {
+    font-size: 24px;
+    width: 250px;
+    height: 55px;
+    transition: 0.5s;
+  }
+
+  .explore-btn:hover {
+    background-color: white;
+    color: rgba(212, 143, 1, 1);
+  }
+
+  .explore-btn a:hover {
+    color: rgba(212, 143, 1, 1);
+  }
+
+  .museum-logo img {
+    width: 460px;
     height: auto;
-  }
-
-  .paragraph1,
-  .paragraph2,
-  .paragraph3,
-  .paragraph4 {
-    width: 500px;
-    margin-left: 20px;
+    margin-left: 45px;
+    margin-bottom: 50px;
+    margin-top: 50px;
   }
 }
+/*------------------------------- min-width 600px END -------------------------------------*/
 
+/*------------------------------- min-width 1000px START -------------------------------------*/
 @media screen and (min-width: 1000px) {
-  .image1,
-  .image2,
-  .image3,
-  .image4 {
-    width: 950px;
+  .nav-bar {
+    font-size: larger;
+  }
+
+  .exhibition-btn {
+    font-size: 35px;
+    width: 355px;
+    height: 85px;
+    transform: translate(85%, 0);
+  }
+
+  .museum-logo img {
+    width: 650px;
     height: auto;
+    margin-left: 140px;
   }
 
-  .paragraph1,
-  .paragraph2,
-  .paragraph3,
-  .paragraph4 {
-    width: 900px;
-    margin-left: 20px;
-  }
-
-  .paragraph1 p,
-  .paragraph2 p,
-  .paragraph3 p,
-  .paragraph4 p {
-    font-size: 26px;
-  }
-
-  .paragraph1 h4,
-  .paragraph2 h4,
-  .paragraph3 h4,
-  .paragraph4 h4 {
+  h5 {
     font-size: 28px;
   }
 }
-/*-------------------------------*/
 
-/*----------------------
-About | page styles
-----------------------*/
-
-#sub-title {
-  margin-top: 35px;
-  margin-bottom: 35px;
-  width: 300px;
-}
-
-#sub-title p {
-  text-align: center;
-}
-
-.about-img1 img {
-  width: 100vw;
-  height: auto;
-}
-
-.about-img2 img,
-.about-img3 img {
-  width: 370px;
-  height: auto;
-  margin-top: 50px;
-}
-
-/*----------------END----------------------*/
-
-/*----------------
-Visit page
---------------------*/
-
-.visit-img1 {
-  margin-top: 20px;
-  width: 100vw;
-  height: auto;
-}
-
-.visit-paragraph1 h5,
-.visit-paragraph2 h5,
-.visit-paragraph4 h5 {
-  text-align: start;
-  margin-bottom: -10px;
-}
-
-.visit-paragraph1,
-.visit-paragraph2,
-.visit-paragraph4 {
-  text-align: start;
-}
-
-.visit-paragraph1,
-.visit-paragraph2,
-.visit-paragraph3,
-.visit-paragraph4,
-.visit-paragraph5 {
-  width: 310px;
-  margin-left: 40px;
-  line-height: 1.5;
-}
-
-.visit-hours {
-  text-align: center;
-  line-height: 1.5;
-}
-
-.visit-hours h5 {
-  margin-bottom: -10px;
-}
-
-.visit-paragraph3 h5,
-.visit-paragraph5 h5 {
-  text-align: end;
-  margin-bottom: -10px;
-}
-
-.visit-paragraph3,
-.visit-paragraph5 {
-  text-align: end;
-  line-height: 1.5;
-}
-
-.visit-paragraph1 {
-  margin-bottom: 50px;
-}
-
-.visit-paragraph2 {
-  margin-top: -15px;
-  margin-bottom: 50px;
-}
-
-.visit-paragraph3,
-.visit-paragraph4,
-.visit-paragraph5 {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.parent-visit-img2 {
-  display: grid;
-}
-
-.visit-img2 {
-  width: 300px;
-  height: auto;
-  justify-self: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.visit-img3 {
-  width: 100vw;
-  height: auto;
-}
-
-/*---------------- END --------------------*/
+/*------------------------------- min-width 1000px END -------------------------------------*/

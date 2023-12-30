@@ -1,0 +1,127 @@
+/*----------------------
+Home page styles
+----------------------*/
+
+/*----------------------
+Normal styles
+----------------------
+
+/*------ Carousel-slider -----*/
+
+.carousel-slider {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel-slider img {
+  width: 100vw;
+  height: auto;
+}
+
+.carousel-slider > div {
+  display: flex;
+  flex-shrink: 0;
+  width: 100%;
+  height: auto;
+  scroll-snap-align: start;
+  scroll-behavior: smooth;
+  justify-content: center;
+  align-items: center;
+  animation: scroll 10s linear infinite;
+}
+/*----------------- carousel-slider END ----------------------*/
+
+.home-h1 {
+  width: 200px;
+  margin-left: 20px;
+}
+
+.image1 {
+  width: 380px;
+  height: auto;
+}
+
+.image2,
+.image4 {
+  width: 380px;
+  height: auto;
+  margin-top: 50px;
+}
+
+.image3 {
+  width: 380px;
+  height: auto;
+  margin-top: 40px;
+}
+
+.paragraph1,
+.paragraph2,
+.paragraph3,
+.paragraph4 {
+  width: 350px;
+  margin-left: 20px;
+}
+
+/*----------------------
+Media queries
+----------------------*/
+
+@media screen and (min-width: 600px) {
+  .home-h1 {
+    width: 210px;
+    font-size: 25px;
+  }
+
+  .image1,
+  .image2,
+  .image3,
+  .image4 {
+    width: 550px;
+    height: auto;
+  }
+
+  .paragraph1,
+  .paragraph2,
+  .paragraph3,
+  .paragraph4 {
+    width: 500px;
+    margin-left: 20px;
+  }
+}
+/*------------------------ min-width 600px END ---------------*/
+
+@media screen and (min-width: 1000px) {
+  .image1,
+  .image2,
+  .image3,
+  .image4 {
+    width: 950px;
+    height: auto;
+  }
+
+  .paragraph1,
+  .paragraph2,
+  .paragraph3,
+  .paragraph4 {
+    width: 900px;
+    margin-left: 20px;
+  }
+
+  .paragraph1 p,
+  .paragraph2 p,
+  .paragraph3 p,
+  .paragraph4 p {
+    font-size: 26px;
+  }
+
+  .paragraph1 h4,
+  .paragraph2 h4,
+  .paragraph3 h4,
+  .paragraph4 h4 {
+    font-size: 28px;
+  }
+}
+/*------------------------ min-width 1000px END ---------------*/
