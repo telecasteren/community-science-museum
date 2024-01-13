@@ -5,6 +5,9 @@ Global styles
 @import url(home.css);
 @import url(about.css);
 @import url(visit.css);
+@import url(explore.css);
+@import url(exhibitions.css);
+@import url();
 
 /*-----------------------------------------------------------------
 Media queries at the bottom of each sheet in order
@@ -19,6 +22,7 @@ body {
 html {
   overflow-x: hidden;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -60,6 +64,7 @@ nav li:hover {
   margin-top: 20px;
   font-size: 25px;
   text-align: center;
+  letter-spacing: 0.5px;
   color: white;
   background-color: rgba(212, 143, 1, 1);
 }
@@ -91,27 +96,38 @@ nav li:hover {
   margin-top: 50px;
   margin-bottom: 50px;
   justify-self: center;
+  color: white;
 }
 
 .explore-btn a {
   color: white;
 }
 
+div.museum-logo {
+  display: grid;
+}
+
 .museum-logo img {
   position: relative;
-  margin-left: 50px;
   margin-top: 10px;
   margin-bottom: 20px;
+  justify-self: center;
 }
 
 p {
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.5px;
 }
 
 h5 {
   position: relative;
   text-align: center;
+  letter-spacing: 0.5px;
+}
+
+h3 {
+  letter-spacing: 0.5px;
 }
 
 .main-section {

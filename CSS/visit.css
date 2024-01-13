@@ -8,6 +8,12 @@ Visit page
   height: auto;
 }
 
+.visit-img4 {
+  width: 100vw;
+  height: auto;
+  margin-bottom: 50px;
+}
+
 .visit-paragraph1 h5,
 .visit-paragraph2 h5,
 .visit-paragraph4 h5 {

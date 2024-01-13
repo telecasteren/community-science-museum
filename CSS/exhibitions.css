@@ -1,0 +1,55 @@
+/*-------------------------
+Exhibitions page styles
+--------------------------*/
+
+div.exh-img-row1 {
+  width: 370px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 20px;
+  justify-self: center;
+}
+
+.exh-img-row1 img {
+  width: 180px;
+  height: auto;
+}
+
+#VR-img {
+  margin-right: 10px;
+}
+
+#galileo-img,
+#mammoth-img,
+#skeleton-img,
+#robot-img,
+#ecology-img {
+  width: 370px;
+  height: auto;
+  margin-bottom: 60px;
+  justify-self: center;
+}
+
+.exh-img-row2 {
+  margin-bottom: 20px;
+  margin-left: 15px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.exh-img-row2 p {
+  width: 165px;
+  text-align: start;
+  margin-top: 28px;
+  margin-left: 18px;
+}
+
+.exh-img-row2 p b {
+  font-size: larger;
+}
+
+.human-sculpture-img {
+  width: 200px;
+  height: auto;
+  margin-top: 20px;
+}

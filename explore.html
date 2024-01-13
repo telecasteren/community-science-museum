@@ -37,18 +37,154 @@
       </ul>
     </nav>
 
-    <section class="main-section">
-      <h1>EXPLORE</h1>
-      <button class="home-btn"><a href="">Kids</a></button>
-      <button class="home-btn"><a href="">Teachers</a></button>
-      <button class="home-btn">
+    <div class="museum-logo">
+      <img
+        src="images/community-science-.svg"
+        alt="Community science museum logo"
+      />
+    </div>
+
+    <img
+      class="explore-img1"
+      src="images/learn-2405206_1920.jpg"
+      alt="Curious child lokking at a math expression"
+    />
+
+    <div class="button-rows">
+      <button class="exhibition-btn" id="button-table">
+        <a href="">Kids</a>
+      </button>
+      <button class="exhibition-btn" id="button-table">
+        <a href="#teach">Teachers</a>
+      </button>
+      <button class="exhibition-btn" id="button-table">
         <a href="exhibitions.html">Exhibitions</a>
       </button>
-      <button class="home-btn"><a href="">Researchers</a></button>
+      <button class="exhibition-btn" id="button-table">
+        <a href="#research">Researchers</a>
+      </button>
+    </div>
 
-      <h3>For kids</h3>
-      <h3>For teachers</h3>
-      <h3>Researchers</h3>
+    <section class="explore-section">
+      <h4>For kids</h4>
+      <p class="paragraph1">
+        Are you a young person looking to learn more about science? Come on down
+        to our museum, there's plenty to see and do.
+      </p>
+
+      <div class="kids-column1">
+        <img
+          class="explore-img2"
+          src="images/reading-2762010_1280.jpg"
+          alt="Child reading a book surrounded by spaceships"
+        />
+
+        <p class="explore-paragraph2">
+          You can learn about Newtonian physics from our bumper swing, or why
+          not travel back in time and meet our resident Woolly Mammoth?
+        </p>
+      </div>
+
+      <p class="explore-paragraph3">
+        Our exhibits are designed to be accessible for interested minds, so make
+        sure you come ready to learn and explore. We also have the Young Stars
+        club which meets once a week on a Saturday between 10:00 and 13:00 where
+        you'll get to explore and experiment with our team of experts.
+        <br />
+        <br />
+        During the school holidays we run special holiday clubs where you can
+        join other children your age to go on a journey of discovery.
+      </p>
+
+      <div class="kids-column2">
+        <img
+          class="explore-img3"
+          src="images/science-2799817.jpg"
+          alt="cartoon chemistry set"
+        />
+        <p class="explore-paragraph4">
+          Each holiday we pick a new theme to explore. To find out more about
+          the holiday club and how you can join, send us a message.
+        </p>
+      </div>
+
+      <div class="button-container">
+        <a href="#down"
+          ><button class="explore-btn">Young stars club</button>
+        </a>
+      </div>
+
+      <h4 id="teach">For teachers</h4>
+      <p class="explore-paragraph5">
+        As a community-driven museum, we want to work with schools to create
+        places of learning and exploring. Our team are on hand to give your
+        students guided tours of the museum, teach them in our learning
+        laboratory, and provide great video presentations that will excite and
+        inspire them.
+      </p>
+
+      <img
+        class="explore-img4"
+        src="images/teacher-2816112.jpg"
+        alt="cartoon teacher with chemistry bottles"
+      />
+
+      <p class="explore-paragraph6">
+        Please get in touch with us here to find out more about our facilities
+        and to arrange a time to bring your students through for a visit.
+      </p>
+
+      <div class="button-container">
+        <a href="#down"><button class="explore-btn">Get in touch</button> </a>
+      </div>
+
+      <h4 id="research">Researchers</h4>
+      <p class="explore-paragraph7">
+        Are you looking to get involved with our team of researchers and
+        academics? Our museum offers various ways for you to use our resources
+        and contribute towards them. We have online records, laboratory space,
+        and a working relationship with a number of universities around the
+        country.
+      </p>
+
+      <div class="button-container">
+        <button class="explore-btn">
+          <a href="exhibitions.html">Online records</a>
+        </button>
+      </div>
+    </section>
+
+    <section class="form-section" id="down">
+      <form>
+        <label for="name">Contact us:</label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="What's your email"
+          required
+        />
+        <input
+          type="text"
+          id="title"
+          name="title"
+          placeholder="What's your inquiry"
+          required
+        />
+        <input
+          id="message-field"
+          type="text"
+          id="message"
+          name="message"
+          placeholder="Your message here"
+          required
+        />
+        <div class="button-container">
+          <a href="thankyou.html"
+            ><input type="submit" id="submit-btn" value="Send"
+          /></a>
+        </div>
+      </form>
     </section>
     <footer><h5>Copyright &copy; 2023 Community Science Museum</h5></footer>
   </body>

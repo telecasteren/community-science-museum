@@ -1,0 +1,131 @@
+/*----------------
+Explore page styles
+-------------------*/
+
+.button-rows {
+  display: inline-table;
+  margin-left: -45px;
+}
+
+#button-table {
+  margin-right: 20px;
+  width: 160px;
+  margin-top: -20px;
+}
+
+.explore-section {
+  margin-left: 10px;
+}
+
+.explore-section h4 {
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.explore-paragraph1,
+.explore-paragraph2,
+.explore-paragraph3,
+.explore-paragraph4,
+.explore-paragraph5,
+.explore-paragraph6,
+.explore-paragraph7 {
+  width: 350px;
+  margin-left: 20px;
+}
+
+.explore-img1 {
+  width: 100vw;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+.explore-img2 {
+  width: 200px;
+  height: auto;
+  margin-bottom: 40px;
+  margin-left: 20px;
+}
+
+.kids-column1,
+.kids-column2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 20px;
+  margin-top: 60px;
+}
+
+.kids-column1 p,
+.kids-column2 p {
+  width: 120px;
+}
+
+.explore-img3 {
+  width: 200px;
+  height: auto;
+  margin-left: 20px;
+}
+
+.explore-img4 {
+  width: 350px;
+  height: auto;
+  margin-bottom: 40px;
+  justify-self: center;
+}
+
+/*---------------
+FORM styles
+----------------*/
+
+.form-section {
+  margin-top: 40px;
+  margin-bottom: 80px;
+  display: grid;
+  justify-content: center;
+}
+
+form {
+  display: grid;
+}
+
+label {
+  font-size: 24px;
+  position: relative;
+  text-align: center;
+  justify-self: center;
+  color: rgba(212, 143, 1, 1);
+  letter-spacing: 0.5px;
+}
+
+input {
+  font-size: 16px;
+  width: 240px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: white;
+  border: 1.5px solid rgba(212, 143, 1, 1);
+  margin-top: 10px;
+}
+
+input::placeholder {
+  color: rgba(212, 143, 1, 1);
+  text-align: center;
+}
+
+#message-field {
+  height: 150px;
+}
+
+.button-container {
+  display: grid;
+  justify-content: center;
+}
+
+#submit-btn {
+  font-size: 18px;
+  width: 100px;
+  height: 40px;
+  border-radius: 8px;
+  color: white;
+  background-color: rgba(212, 143, 1, 1);
+  border: 1.5px solid rgba(212, 143, 1, 1);
+}

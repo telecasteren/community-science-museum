@@ -60,7 +60,9 @@ Normal styles
 .paragraph1,
 .paragraph2,
 .paragraph3,
-.paragraph4 {
+.paragraph4,
+.paragraph5,
+.paragraph6 {
   width: 350px;
   margin-left: 20px;
 }
