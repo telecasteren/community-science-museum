@@ -28,14 +28,23 @@
     <title>About | page</title>
   </head>
   <body>
-    <nav class="nav-bar">
-      <ul>
-        <a href="index.html"><li>home</li></a>
-        <a href="about.html" id="current"><li>about</li></a>
-        <a href="visit.html"><li>visit</li></a>
-        <a href="explore.html"><li>explore</li></a>
-      </ul>
-    </nav>
+    <div class="nav-bar">
+      <nav>
+        <ul id="menuList">
+          <a href="index.html"><li>home</li></a>
+          <a href="about.html"><li>about</li></a>
+          <a href="visit.html" id="current"><li>visit</li></a>
+          <a href="explore.html"><li>explore</li></a>
+        </ul>
+      </nav>
+
+      <img
+        src="images/hamburger-menu.png"
+        class="menu-icon"
+        alt="menu icon"
+        onclick="togglemenu()"
+      />
+    </div>
 
     <div class="title-h1"><h1>About us</h1></div>
 
@@ -108,5 +117,18 @@
     </section>
 
     <footer><h5>Copyright &copy; 2023 Community Science Museum</h5></footer>
+
+    <script>
+      var menuList = document.getElementById("menuList");
+      menuList.style.maxHeight = "0px";
+
+      function togglemenu() {
+        if (menuList.style.maxHeight == "0px") {
+          menuList.style.maxHeight = "200px";
+        } else {
+          menuList.style.maxHeight = "0px";
+        }
+      }
+    </script>
   </body>
 </html>

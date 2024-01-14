@@ -37,6 +37,18 @@ Visit page
   line-height: 1.5;
 }
 
+.visit-paragraph3,
+.visit-paragraph5 {
+  text-align: end;
+  position: relative;
+}
+
+.visit-paragraph3 h5,
+.visit-paragraph5 h5 {
+  margin-bottom: -10px;
+  text-align: end;
+}
+
 .visit-hours {
   text-align: center;
   line-height: 1.5;
@@ -44,18 +56,6 @@ Visit page
 
 .visit-hours h5 {
   margin-bottom: -10px;
-}
-
-.visit-paragraph3 h5,
-.visit-paragraph5 h5 {
-  text-align: end;
-  margin-bottom: -10px;
-}
-
-.visit-paragraph3,
-.visit-paragraph5 {
-  text-align: end;
-  line-height: 1.5;
 }
 
 .visit-paragraph1 {
@@ -92,3 +92,50 @@ Visit page
 }
 
 /*---------------- END --------------------*/
+
+/*-----
+media queries
+-------------*/
+
+@media screen and (min-width: 600px) {
+  .visit-img2 {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .visit-paragraph1 h5,
+  .visit-hours h5 {
+    font-size: 30px;
+  }
+
+  .visit-hours p {
+    font-size: 25px;
+  }
+
+  .visit-paragraph1,
+  .visit-paragraph2,
+  .visit-paragraph3,
+  .visit-paragraph4,
+  .visit-paragraph5 {
+    width: 660px;
+  }
+
+  .visit-paragraph1 p,
+  .visit-paragraph2 p,
+  .visit-paragraph3 p,
+  .visit-paragraph4 p,
+  .visit-paragraph5 p {
+    font-size: 25px;
+  }
+
+  .visit-img2 {
+    width: 650px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .visit-img2 {
+    width: 1000px;
+  }
+}

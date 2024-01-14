@@ -7,10 +7,11 @@ Global styles
 @import url(visit.css);
 @import url(explore.css);
 @import url(exhibitions.css);
-@import url();
+@import url(thanks.css);
 
 /*-----------------------------------------------------------------
 Media queries at the bottom of each sheet in order
+Code outside of media quiries written for sizes around 400px
 --------------------------------------------------------------------*/
 
 body {
@@ -42,13 +43,19 @@ footer h5 {
 
 .nav-bar {
   text-align: center;
+  margin-bottom: 40px;
 }
 
 nav li {
   list-style-type: none;
   display: inline;
-  margin-right: 40px;
+  margin-right: 35px;
+  font-size: 20px;
   color: black;
+}
+
+.menu-icon {
+  display: none;
 }
 
 nav li:hover {
@@ -145,6 +152,11 @@ Media queries for common code
 /*------------- min-width 600px START ------------*/
 
 @media screen and (min-width: 600px) {
+  nav li {
+    margin-right: 60px;
+    font-size: 22px;
+  }
+
   .title-h1 h1 {
     padding: 20px;
     margin-top: 50px;
@@ -220,3 +232,35 @@ Media queries for common code
 }
 
 /*------------------------------- min-width 1000px END -------------------------------------*/
+
+/*--- max-width 395px ---*/
+
+/*- NAVBAR menu icon -*/
+@media screen and (max-width: 395px) {
+  .nav-bar {
+    text-align: start;
+  }
+
+  nav li {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+
+  .menu-icon {
+    width: 50px;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: -20px;
+    cursor: pointer;
+  }
+
+  #menuList {
+    position: absolute;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-left: 35px;
+    width: 100vw;
+  }
+}
+/*---------------- max-width 395px END ------------------*/

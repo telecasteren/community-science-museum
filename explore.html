@@ -28,14 +28,23 @@
     <title>Explore | page</title>
   </head>
   <body>
-    <nav class="nav-bar">
-      <ul>
-        <a href="index.html"><li>home</li></a>
-        <a href="about.html"><li>about</li></a>
-        <a href="visit.html"><li>visit</li></a>
-        <a href="explore.html" id="current"><li>explore</li></a>
-      </ul>
-    </nav>
+    <div class="nav-bar">
+      <nav>
+        <ul id="menuList">
+          <a href="index.html"><li>home</li></a>
+          <a href="about.html"><li>about</li></a>
+          <a href="visit.html"><li>visit</li></a>
+          <a href="explore.html" id="current"><li>explore</li></a>
+        </ul>
+      </nav>
+
+      <img
+        src="images/hamburger-menu.png"
+        class="menu-icon"
+        alt="menu icon"
+        onclick="togglemenu()"
+      />
+    </div>
 
     <div class="museum-logo">
       <img
@@ -52,7 +61,7 @@
 
     <div class="button-rows">
       <button class="exhibition-btn" id="button-table">
-        <a href="">Kids</a>
+        <a href="#kids">Kids</a>
       </button>
       <button class="exhibition-btn" id="button-table">
         <a href="#teach">Teachers</a>
@@ -66,7 +75,7 @@
     </div>
 
     <section class="explore-section">
-      <h4>For kids</h4>
+      <h4 id="kids">For kids</h4>
       <p class="paragraph1">
         Are you a young person looking to learn more about science? Come on down
         to our museum, there's plenty to see and do.
@@ -154,8 +163,8 @@
       </div>
     </section>
 
-    <section class="form-section" id="down">
-      <form>
+    <section class="form-section">
+      <form id="down">
         <label for="name">Contact us:</label>
         <input
           type="text"
@@ -187,5 +196,18 @@
       </form>
     </section>
     <footer><h5>Copyright &copy; 2023 Community Science Museum</h5></footer>
+
+    <script>
+      var menuList = document.getElementById("menuList");
+      menuList.style.maxHeight = "0px";
+
+      function togglemenu() {
+        if (menuList.style.maxHeight == "0px") {
+          menuList.style.maxHeight = "200px";
+        } else {
+          menuList.style.maxHeight = "0px";
+        }
+      }
+    </script>
   </body>
 </html>
