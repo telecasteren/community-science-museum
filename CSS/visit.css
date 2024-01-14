@@ -37,16 +37,18 @@ Visit page
   line-height: 1.5;
 }
 
+.viewport-div,
+.viewport-div h5 {
+  text-align: right;
+}
 .visit-paragraph3,
 .visit-paragraph5 {
-  text-align: end;
   position: relative;
 }
 
 .visit-paragraph3 h5,
 .visit-paragraph5 h5 {
   margin-bottom: -10px;
-  text-align: end;
 }
 
 .visit-hours {
