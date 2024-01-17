@@ -129,3 +129,7 @@ input::placeholder {
   background-color: rgba(212, 143, 1, 1);
   border: 1.5px solid rgba(212, 143, 1, 1);
 }
+
+/*----
+Media queries for larger screens than 494, where the first breakpoint goes.
+-------------------------------*/

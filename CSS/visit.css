@@ -29,11 +29,15 @@ Visit page
 
 .visit-paragraph1,
 .visit-paragraph2,
-.visit-paragraph3,
-.visit-paragraph4,
-.visit-paragraph5 {
+.visit-paragraph4 {
   width: 310px;
   margin-left: 40px;
+  line-height: 1.5;
+}
+/*
+.visit-paragraph3,
+.visit-paragraph5 {
+  width: 310px;
   line-height: 1.5;
 }
 
@@ -45,10 +49,33 @@ Visit page
 .visit-paragraph5 {
   position: relative;
 }
+*/
+
+.viewport-div {
+  display: grid;
+  width: 100vw;
+}
+
+.visit-paragraph3 h5,
+.visit-paragraph5 h5 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 120px;
+  margin-right: 20px; /*- DRY -*/
+  text-align: end;
+}
 
 .visit-paragraph3 h5,
 .visit-paragraph5 h5 {
   margin-bottom: -10px;
+}
+
+.visit-paragraph3 p,
+.visit-paragraph5 p {
+  text-align: end;
+  margin-right: 15px;
+  margin-left: auto;
+  width: 310px;
 }
 
 .visit-hours {
@@ -117,10 +144,20 @@ media queries
 
   .visit-paragraph1,
   .visit-paragraph2,
-  .visit-paragraph3,
-  .visit-paragraph4,
-  .visit-paragraph5 {
+  .visit-paragraph4 {
     width: 660px;
+  }
+
+  .visit-paragraph3 p,
+  .visit-paragraph5 p {
+    width: 610px;
+  }
+
+  .visit-paragraph3 p,
+  .visit-paragraph5 p,
+  .visit-paragraph3 h5,
+  .visit-paragraph5 h5 {
+    margin-right: 40px;
   }
 
   .visit-paragraph1 p,
