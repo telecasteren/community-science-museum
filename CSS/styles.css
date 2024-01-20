@@ -14,6 +14,13 @@ Media queries at the bottom of each sheet in order
 Code outside of media quiries written for sizes around 400px
 --------------------------------------------------------------------*/
 
+:root {
+  --orange: rgba(224, 151, 0, 1);
+  --dark-orange: rgba(212, 143, 1, 1);
+  --white: #ffffff;
+  --black: #000000;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -34,7 +41,7 @@ footer {
   position: relative;
   text-align: center;
   margin-top: 20px;
-  color: rgba(224, 151, 0, 1);
+  color: var(--orange);
 }
 
 footer h5 {
@@ -51,7 +58,7 @@ nav li {
   display: inline;
   margin-right: 35px;
   font-size: 20px;
-  color: black;
+  color: var(--black);
 }
 
 .menu-icon {
@@ -59,11 +66,11 @@ nav li {
 }
 
 nav li:hover {
-  color: rgba(224, 151, 0, 1);
+  color: var(--orange);
 }
 
 #current li {
-  color: rgba(224, 151, 0, 1);
+  color: var(--orange);
 }
 
 .title-h1 h1 {
@@ -73,7 +80,7 @@ nav li:hover {
   text-align: center;
   letter-spacing: 0.5px;
   color: white;
-  background-color: rgba(212, 143, 1, 1);
+  background-color: var(--dark-orange);
 }
 
 .exhibition-btn {
@@ -81,7 +88,7 @@ nav li:hover {
   width: 200px;
   height: 40px;
   background-color: white;
-  border: 1.5px solid rgba(212, 143, 1, 1);
+  border: 1.5px solid var(--dark-orange);
   border-radius: 8px;
   transform: translate(45%, 0);
   margin-top: 50px;
@@ -90,15 +97,15 @@ nav li:hover {
 }
 
 .exhibition-btn a {
-  color: rgba(212, 143, 1, 1);
+  color: var(--dark-orange);
 }
 
 .explore-btn {
   font-size: 18px;
   width: 200px;
   height: 40px;
-  background-color: rgba(212, 143, 1, 1);
-  border: 1.5px solid rgba(212, 143, 1, 1);
+  background-color: var(--dark-orange);
+  border: 1.5px solid var(--dark-orange);
   border-radius: 8px;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -107,7 +114,7 @@ nav li:hover {
 }
 
 .explore-btn a {
-  color: white;
+  color: var(--white);
 }
 
 div.museum-logo {
@@ -162,8 +169,6 @@ Media queries for common code
     margin-top: 50px;
     font-size: 38px;
     text-align: center;
-    color: white;
-    background-color: rgba(212, 143, 1, 1);
   }
 
   .exhibition-btn {
@@ -220,10 +225,17 @@ Media queries for common code
     transform: translate(85%, 0);
   }
 
+  .explore-btn {
+    font-size: 35px;
+    width: 355px;
+    height: 85px;
+    transition: 0.5s;
+  }
+
   .museum-logo img {
     width: 650px;
     height: auto;
-    margin-left: 140px;
+    margin-left: 0px;
   }
 
   h5 {
