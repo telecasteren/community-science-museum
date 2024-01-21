@@ -2,7 +2,7 @@
 Global styles
 --------------------------------*/
 
-@import url(home.css);
+@import url(index.css);
 @import url(about.css);
 @import url(visit.css);
 @import url(explore.css);
@@ -19,6 +19,8 @@ Code outside of media quiries written for sizes around 400px
   --dark-orange: rgba(212, 143, 1, 1);
   --white: #ffffff;
   --black: #000000;
+  --scrollbar-thumb: #888;
+  --scrollbar-track: #f0f0f0;
 }
 
 body {
@@ -132,6 +134,7 @@ p {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.5px;
+  text-align: justify;
 }
 
 h5 {
@@ -208,6 +211,10 @@ Media queries for common code
     margin-left: 45px;
     margin-bottom: 50px;
     margin-top: 50px;
+  }
+
+  h5 {
+    font-size: 20px;
   }
 }
 /*------------------------------- min-width 600px END -------------------------------------*/

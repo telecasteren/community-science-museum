@@ -53,3 +53,85 @@ div.exh-img-row1 {
   height: auto;
   margin-top: 20px;
 }
+
+/*----------------
+media queries
+------------------*/
+
+@media screen and (min-width: 600px) {
+  div.exh-img-row1 {
+    width: 450px;
+  }
+
+  .exh-img-row1 img {
+    width: 220px;
+    height: auto;
+  }
+
+  #galileo-img,
+  #mammoth-img,
+  #skeleton-img,
+  #robot-img,
+  #ecology-img {
+    width: 550px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .human-sculpture-img {
+    width: 260px;
+    height: auto;
+  }
+
+  .exh-img-row2 p {
+    margin-top: 14px;
+    margin-left: 25px;
+  }
+
+  .biologyIMG-paragraph {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  div.exh-img-row1 {
+    width: 710px;
+  }
+
+  .exh-img-row1 img {
+    width: 300px;
+    height: auto;
+  }
+
+  #VR-img {
+    margin-right: 100px;
+  }
+
+  div.exh-img-row2 {
+    margin-left: 140px;
+  }
+
+  .human-sculpture-img {
+    width: 350px;
+    height: auto;
+  }
+
+  .biologyIMG-paragraph {
+    font-size: 22px;
+  }
+
+  .exh-img-row2 p {
+    margin-top: 65px;
+    margin-left: 10px;
+  }
+
+  #galileo-img,
+  #mammoth-img,
+  #skeleton-img,
+  #robot-img,
+  #ecology-img {
+    width: 850px;
+    height: auto;
+  }
+}

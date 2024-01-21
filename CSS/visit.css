@@ -34,22 +34,6 @@ Visit page
   margin-left: 40px;
   line-height: 1.5;
 }
-/*
-.visit-paragraph3,
-.visit-paragraph5 {
-  width: 310px;
-  line-height: 1.5;
-}
-
-.viewport-div,
-.viewport-div h5 {
-  text-align: right;
-}
-.visit-paragraph3,
-.visit-paragraph5 {
-  position: relative;
-}
-*/
 
 .viewport-div {
   display: grid;
@@ -79,8 +63,11 @@ Visit page
 }
 
 .visit-hours {
-  text-align: center;
   line-height: 1.5;
+}
+
+.visit-hours p {
+  text-align: center;
 }
 
 .visit-hours h5 {

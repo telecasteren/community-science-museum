@@ -4,7 +4,21 @@ Home page styles
 
 /*----------------------
 Normal styles
-----------------------
+----------------------*/
+
+/*-------------------
+Chevrons for slider:
+
+#arrows-right {
+  position: relative;
+  z-index: 50;
+  top: 100px;
+  left: 200px;
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+------------------*/
 
 /*------ Carousel-slider -----*/
 
@@ -31,6 +45,7 @@ Normal styles
   justify-content: center;
   align-items: center;
   animation: scroll 10s linear infinite;
+  scroll-padding: 20px;
 }
 /*----------------- carousel-slider END ----------------------*/
 
@@ -88,9 +103,30 @@ Media queries
   .paragraph1,
   .paragraph2,
   .paragraph3,
-  .paragraph4 {
+  .paragraph4,
+  .paragraph5,
+  .paragraph6 {
     width: 500px;
     margin-left: 20px;
+    font-size: 20px;
+  }
+
+  .paragraph1 p,
+  .paragraph2 p,
+  .paragraph3 p,
+  .paragraph4 p,
+  .paragraph5 p,
+  .paragraph6 p {
+    font-size: 20px;
+  }
+
+  .paragraph1 h4,
+  .paragraph2 h4,
+  .paragraph3 h4,
+  .paragraph4 h4,
+  .paragraph5 h4,
+  .paragraph6 h4 {
+    font-size: 24px;
   }
 }
 /*------------------------ min-width 600px END ---------------*/
@@ -107,22 +143,29 @@ Media queries
   .paragraph1,
   .paragraph2,
   .paragraph3,
-  .paragraph4 {
+  .paragraph4,
+  .paragraph5,
+  .paragraph6 {
     width: 900px;
     margin-left: 20px;
+    font-size: 26px;
   }
 
   .paragraph1 p,
   .paragraph2 p,
   .paragraph3 p,
-  .paragraph4 p {
+  .paragraph4 p,
+  .paragraph5 p,
+  .paragraph6 p {
     font-size: 26px;
   }
 
   .paragraph1 h4,
   .paragraph2 h4,
   .paragraph3 h4,
-  .paragraph4 h4 {
+  .paragraph4 h4,
+  .paragraph5 h4,
+  .paragraph6 h4 {
     font-size: 28px;
   }
 }

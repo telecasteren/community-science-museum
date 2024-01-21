@@ -33,6 +33,11 @@ Explore page styles
   margin-left: 20px;
 }
 
+.explore-paragraph2,
+.explore-paragraph4 {
+  text-align: start;
+}
+
 .explore-img1 {
   width: 100vw;
   height: auto;
