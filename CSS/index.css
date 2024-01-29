@@ -14,20 +14,6 @@ Home page styles
 Normal styles
 ----------------------*/
 
-/*-------------------
-Chevrons for slider:
-
-#arrows-right {
-  position: relative;
-  z-index: 50;
-  top: 100px;
-  left: 200px;
-  width: 50px;
-  height: 50px;
-  display: block;
-}
-------------------*/
-
 /*------ Carousel-slider -----*/
 
 .carousel-slider {
@@ -87,12 +73,61 @@ Chevrons for slider:
 .paragraph5,
 .paragraph6 {
   width: 350px;
-  margin-left: 20px;
+  display: grid;
+  justify-self: center;
 }
 
 /*----------------------
 Media queries
 ----------------------*/
+
+/*------------------
+smaller screens than 400px
+---------------------------*/
+
+@media screen and (min-width: 300px) {
+  .paragraph1,
+  .paragraph2,
+  .paragraph3,
+  .paragraph4,
+  .paragraph5,
+  .paragraph6 {
+    width: 265px;
+  }
+
+  .home-h1 {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (min-width: 350px) {
+  .paragraph1,
+  .paragraph2,
+  .paragraph3,
+  .paragraph4,
+  .paragraph5,
+  .paragraph6 {
+    width: 300px;
+  }
+
+  .home-h1 {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .image1,
+  .image2,
+  .image3,
+  .image4 {
+    width: 100vw;
+    height: auto;
+  }
+}
+
+/*------------------
+larger screens than 400px
+---------------------------*/
 
 @media screen and (min-width: 600px) {
   .home-h1 {
@@ -115,8 +150,6 @@ Media queries
   .paragraph5,
   .paragraph6 {
     width: 500px;
-    margin-left: 20px;
-    font-size: 20px;
   }
 
   .paragraph1 p,
@@ -140,6 +173,10 @@ Media queries
 /*------------------------ min-width 600px END ---------------*/
 
 @media screen and (min-width: 1000px) {
+  .home-h1 {
+    width: 280px;
+  }
+
   .image1,
   .image2,
   .image3,
@@ -155,7 +192,6 @@ Media queries
   .paragraph5,
   .paragraph6 {
     width: 900px;
-    margin-left: 20px;
     font-size: 26px;
   }
 

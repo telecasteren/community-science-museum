@@ -30,16 +30,15 @@ Visit page
 }
 
 .visit-paragraph1,
-.visit-paragraph2,
-.visit-paragraph4 {
-  text-align: start;
+.visit-paragraph2 {
+  display: grid;
+  justify-self: center;
+  width: 350px;
 }
 
-.visit-paragraph1,
-.visit-paragraph2,
 .visit-paragraph4 {
   width: 310px;
-  margin-left: 40px;
+  margin-left: 15px;
   line-height: 1.5;
 }
 
@@ -51,9 +50,9 @@ Visit page
 .visit-paragraph3 h5,
 .visit-paragraph5 h5 {
   margin-top: 50px;
+  margin-right: 20px;
   margin-bottom: 50px;
-  margin-left: 120px;
-  margin-right: 20px; /*- DRY -*/
+  margin-left: 120px; /* - DRY - */
   text-align: end;
 }
 
@@ -121,9 +120,42 @@ Visit page
 media queries
 -------------*/
 
+@media screen and (min-width: 300px) {
+  .visit-paragraph1,
+  .visit-paragraph2 {
+    width: 250px;
+  }
+
+  .visit-paragraph4 {
+    width: 260px;
+  }
+
+  .visit-paragraph3 p,
+  .visit-paragraph5 p {
+    width: 280px;
+  }
+}
+
+@media screen and (min-width: 350px) {
+  div.visit-img1 {
+    display: grid;
+    justify-content: center;
+  }
+
+  .visit-paragraph1,
+  .visit-paragraph2 {
+    width: 300px;
+  }
+}
+
 @media screen and (min-width: 600px) {
   .visit-img2 {
     width: 400px;
+  }
+
+  .visit-paragraph1,
+  .visit-paragraph2 {
+    width: 380px;
   }
 }
 
@@ -131,6 +163,10 @@ media queries
   .visit-paragraph1 h5,
   .visit-hours h5 {
     font-size: 30px;
+  }
+
+  .visit-paragraph4 {
+    margin-left: 35px;
   }
 
   .visit-hours p {

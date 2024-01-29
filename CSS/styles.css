@@ -89,19 +89,20 @@ nav li:hover {
 .exhibition-btn {
   font-size: 18px;
   width: 200px;
-  height: 40px;
+  padding: 10px;
   background-color: var(--white);
   border: 1.5px solid var(--dark-orange);
   border-radius: 8px;
-  transform: translate(45%, 0);
   margin-top: 50px;
   margin-bottom: 50px;
   transition: 0.5s;
-  display: inline-table;
+  display: grid;
+  justify-self: center;
 }
 
 .exhibition-btn a {
   color: var(--dark-orange);
+  text-align: center;
 }
 
 .explore-btn {
@@ -161,6 +162,34 @@ h3 {
 Media queries for common code
 --------------------------------*/
 
+/*- MIN-WIDTH -*/
+
+@media screen and (min-width: 300px) {
+  nav li {
+    margin-right: 28px;
+    margin-left: -20px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  nav li {
+    margin-left: -15px;
+  }
+}
+
+@media screen and (min-width: 350px) {
+  nav li {
+    margin-right: 35px;
+  }
+}
+
+@media screen and (min-width: 395px) {
+  nav li {
+    margin-right: 40px;
+    margin-left: -10px;
+  }
+}
+
 /*------------- min-width 600px START ------------*/
 
 @media screen and (min-width: 600px) {
@@ -179,8 +208,6 @@ Media queries for common code
   .exhibition-btn {
     font-size: 24px;
     width: 250px;
-    height: 55px;
-    transform: translate(60%, 0);
   }
 
   .exhibition-btn:hover {
@@ -230,8 +257,6 @@ Media queries for common code
   .exhibition-btn {
     font-size: 35px;
     width: 355px;
-    height: 85px;
-    transform: translate(85%, 0);
   }
 
   .explore-btn {
@@ -254,17 +279,17 @@ Media queries for common code
 
 /*------------------------------- min-width 1000px END -------------------------------------*/
 
-/*--- max-width 395px ---*/
+@media screen and (max-width: 390px) {
+  footer h5 {
+    font-size: 12px;
+  }
+}
 
-/*- NAVBAR menu icon -*/
+/*- MAX-WIDTH -*/
+
 @media screen and (max-width: 395px) {
   .nav-bar {
     text-align: start;
-  }
-
-  nav li {
-    margin-right: 10px;
-    font-size: 20px;
   }
 
   .menu-icon {
@@ -284,4 +309,5 @@ Media queries for common code
     width: 100vw;
   }
 }
+
 /*---------------- max-width 395px END ------------------*/

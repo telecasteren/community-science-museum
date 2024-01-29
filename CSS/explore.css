@@ -12,21 +12,29 @@ Explore page styles
 -------------------*/
 
 .button-rows {
-  margin-left: -45px;
+  margin-left: 0;
+  margin-right: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
 }
 
 #button-table {
-  margin-right: 20px;
+  justify-self: center;
+  transform: translate(0, 0);
+  margin-left: 0;
+  margin-right: 0;
   width: 160px;
   margin-top: -20px;
 }
 
 .explore-section {
-  margin-left: 10px;
+  display: grid;
+  justify-content: center;
 }
 
 .explore-section h4 {
-  margin-left: 20px;
+  margin-left: 25px;
   font-size: 20px;
 }
 
@@ -38,7 +46,7 @@ Explore page styles
 .explore-paragraph6,
 .explore-paragraph7 {
   width: 350px;
-  margin-left: 20px;
+  justify-self: center;
 }
 
 .explore-paragraph2,
@@ -138,31 +146,96 @@ input::placeholder {
   width: 100px;
   height: 40px;
   border-radius: 8px;
-  color: var(--white);
   background-color: var(--dark-orange);
   border: 1.5px solid var(--dark-orange);
+  justify-self: center;
+  margin-top: 10px;
+}
+
+button a {
+  color: var(--white);
 }
 
 /*-----------------------------
 Media queries for larger screens
 -------------------------------*/
 
-@media screen and (min-width: 460px) {
-  .button-rows {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+@media screen and (min-width: 300px) {
+  .explore-paragraph1,
+  .explore-paragraph2,
+  .explore-paragraph3,
+  .explore-paragraph4,
+  .explore-paragraph5,
+  .explore-paragraph6,
+  .explore-paragraph7 {
+    width: 260px;
+  }
+
+  .explore-section h4 {
+    margin-left: 45px;
+  }
+
+  .explore-img2 {
+    width: 150px;
+    margin-left: 45px;
+  }
+
+  .kids-column1 p,
+  .kids-column2 p {
+    font-size: 12px;
+    margin-left: -20px;
+    margin-top: 40px;
+  }
+
+  .kids-column2 p {
+    margin-top: 8px;
+  }
+
+  .kids-column1 {
+    margin-bottom: 5px;
+    margin-top: 40px;
+  }
+
+  .explore-img3 {
+    width: 140px;
+    height: auto;
+    margin-left: 40px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #button-table {
+    width: 135px;
+  }
+}
+
+@media screen and (min-width: 350px) {
+  .explore-paragraph1,
+  .explore-paragraph2,
+  .explore-paragraph3,
+  .explore-paragraph4,
+  .explore-paragraph5,
+  .explore-paragraph6,
+  .explore-paragraph7 {
+    width: 300px;
+  }
+
+  .explore-img2 {
+    width: 180px;
+  }
+
+  .explore-img3 {
+    width: 200px;
+    height: auto;
+  }
+
+  .kids-column1 p,
+  .kids-column2 p {
+    font-size: 14px;
   }
 }
 
 @media screen and (min-width: 600px) {
-  #button-table {
-    width: 200px;
-  }
-
-  .button-rows {
-    margin-left: -90px;
-  }
-
   .explore-img2 {
     width: 220px;
     height: auto;
@@ -184,7 +257,10 @@ Media queries for larger screens
   .explore-paragraph6,
   .explore-paragraph7 {
     width: 535px;
-    margin-left: 20px;
+  }
+
+  .explore-section h4 {
+    margin-left: 35px;
   }
 
   .explore-paragraph6 {
@@ -221,10 +297,6 @@ Media queries for larger screens
 }
 
 @media screen and (min-width: 700px) {
-  .button-rows {
-    margin-left: -55px;
-  }
-
   .explore-section h4 {
     margin-left: 40px;
     font-size: 22px;
@@ -255,7 +327,6 @@ Media queries for larger screens
   .explore-paragraph6,
   .explore-paragraph7 {
     width: 590px;
-    margin-left: 40px;
     font-size: 18px;
   }
 
@@ -276,18 +347,6 @@ Media queries for larger screens
   }
 }
 
-@media screen and (min-width: 700px) {
-  .explore-paragraph1,
-  .explore-paragraph2,
-  .explore-paragraph3,
-  .explore-paragraph4,
-  .explore-paragraph5,
-  .explore-paragraph6,
-  .explore-paragraph7 {
-    width: 620px;
-  }
-}
-
 @media screen and (min-width: 900px) {
   .explore-paragraph1,
   .explore-paragraph2,
@@ -298,20 +357,44 @@ Media queries for larger screens
   .explore-paragraph7 {
     width: 680px;
   }
+
+  .explore-section h4 {
+    margin-left: 10px;
+  }
 }
 
 @media screen and (min-width: 1000px) {
-  /* ------START HERE WITH MAKING THE BUTTONS CORRECT SIZE FORMAT!!----
-  .button-rows {
-    margin-left: -45px;
-  }
-  
   #button-table {
-    margin-right: 20px;
-    width: 160px;
-    margin-top: -20px;
+    width: 270px;
   }
-*/
+
+  .explore-img2 {
+    width: 320px;
+    height: auto;
+  }
+
+  .explore-img3 {
+    width: 380px;
+    height: auto;
+    margin-left: 130px;
+  }
+
+  .kids-column1 p,
+  .kids-column2 p {
+    font-size: 24px;
+    margin-top: 25px;
+    width: 180px;
+  }
+
+  .explore-img4 {
+    transform: translate(200px, 0);
+    width: 550px;
+    height: auto;
+  }
+
+  .explore-section h4 {
+    margin-left: 50px;
+  }
 
   .explore-paragraph1,
   .explore-paragraph2,
@@ -344,5 +427,21 @@ Media queries for larger screens
 
   #message-field {
     height: 220px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .explore-section h4 {
+    font-size: 26px;
+  }
+
+  .explore-paragraph1,
+  .explore-paragraph2,
+  .explore-paragraph3,
+  .explore-paragraph4,
+  .explore-paragraph5,
+  .explore-paragraph6,
+  .explore-paragraph7 {
+    font-size: 24px;
   }
 }
