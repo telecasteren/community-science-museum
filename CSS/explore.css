@@ -177,13 +177,12 @@ Media queries for larger screens
 
   .explore-img2 {
     width: 150px;
-    margin-left: 45px;
+    margin-left: 35px;
   }
 
   .kids-column1 p,
   .kids-column2 p {
     font-size: 12px;
-    margin-left: -20px;
     margin-top: 40px;
   }
 
@@ -199,7 +198,7 @@ Media queries for larger screens
   .explore-img3 {
     width: 140px;
     height: auto;
-    margin-left: 40px;
+    margin-left: 25px;
   }
 }
 

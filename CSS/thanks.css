@@ -16,3 +16,8 @@
 /*------------------------------------
 'Thank you for your inquiery' page styles
 ---------------------------------------*/
+
+.thanks-captions {
+  display: grid;
+  justify-self: center;
+}
