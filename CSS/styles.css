@@ -86,11 +86,17 @@ nav li:hover {
   background-color: var(--dark-orange);
 }
 
+.exhibition-btn-container {
+  display: grid;
+  justify-content: center;
+}
+
 .exhibition-btn {
-  font-size: 18px;
-  width: 200px;
+  font-size: 25px;
+  width: 250px;
   padding: 10px;
   background-color: var(--white);
+  color: var(--dark-orange);
   border: 1.5px solid var(--dark-orange);
   border-radius: 8px;
   margin-top: 50px;
@@ -100,25 +106,16 @@ nav li:hover {
   justify-self: center;
 }
 
-.exhibition-btn a {
-  color: var(--dark-orange);
-  text-align: center;
-}
-
 .explore-btn {
-  font-size: 18px;
-  width: 200px;
-  height: 40px;
+  font-size: 25px;
+  width: 250px;
+  height: 60px;
   background-color: var(--dark-orange);
   border: 1.5px solid var(--dark-orange);
   border-radius: 8px;
   margin-top: 50px;
   margin-bottom: 50px;
   justify-self: center;
-  color: var(--white);
-}
-
-.explore-btn a {
   color: var(--white);
 }
 

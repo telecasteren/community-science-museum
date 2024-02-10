@@ -11,6 +11,10 @@
 Explore page styles
 -------------------*/
 
+div.button-rows a {
+  display: grid;
+}
+
 .button-rows {
   margin-left: 0;
   margin-right: 0;
@@ -20,7 +24,6 @@ Explore page styles
 }
 
 #button-table {
-  justify-self: center;
   transform: translate(0, 0);
   margin-left: 0;
   margin-right: 0;
