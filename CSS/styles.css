@@ -220,6 +220,7 @@ Media queries for common code
 
   .exhibition-btn:hover {
     background-color: rgba(212, 143, 1, 1);
+    color: var(--white);
   }
 
   .exhibition-btn a:hover {
@@ -238,9 +239,9 @@ Media queries for common code
     color: rgba(212, 143, 1, 1);
   }
 
-  .explore-btn a:hover {
+  /*.explore-btn a:hover {
     color: rgba(212, 143, 1, 1);
-  }
+  }*/
 
   .museum-logo img {
     width: 460px;
