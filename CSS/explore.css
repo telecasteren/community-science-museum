@@ -1,15 +1,10 @@
-:root {
-  --orange: rgba(224, 151, 0, 1);
-  --dark-orange: rgba(212, 143, 1, 1);
-  --white: #ffffff;
-  --black: #000000;
-  --scrollbar-thumb: #888;
-  --scrollbar-track: #f0f0f0;
-  --light-orange: rgba(255, 237, 199, 1);
-}
 /*----------------
 Explore page styles
 -------------------*/
+
+#explore-h1 {
+  display: none;
+}
 
 div.button-rows a {
   display: grid;
@@ -297,6 +292,7 @@ Media queries for larger screens
     font-size: 30px;
   }
 }
+/*- FORM END -*/
 
 @media screen and (min-width: 700px) {
   .explore-section h4 {

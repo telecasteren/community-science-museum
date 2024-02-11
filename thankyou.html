@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is where you end up after sending the museum an inquery."
+    />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
 
     <link
@@ -37,24 +41,33 @@
           <a href="explore.html"><li>explore</li></a>
         </ul>
       </nav>
+    </div>
 
+    <img
+      src="images/hamburger-menu.png"
+      class="menu-icon"
+      alt="menu icon"
+      onclick="togglemenu()"
+    />
+
+    <div class="museum-logo">
       <img
-        src="images/hamburger-menu.png"
-        class="menu-icon"
-        alt="menu icon"
-        onclick="togglemenu()"
+        src="images/community-science-.svg"
+        alt="Community science museum logo"
       />
     </div>
 
     <section class="main-section">
-
-      </div><h1>Thanks for your message!</h1>
+      <h1>Thanks for your message!</h1>
       <div class="thanks-captions"><h3>We will soon get back to you.</h3></div>
-      <button class="exhibition-btn">
-        <a href="exhibitions.html">See exhibitions</a>
-      </button>
+
+      <div class="exhibition-btn-container">
+        <a href="exhibitions.html"
+          ><button class="exhibition-btn">See exhibitions</button></a
+        >
+      </div>
+
       <div class="thanks-captions"><h4>..while you wait.</h4></div>
-      
     </section>
     <footer><h5>Copyright &copy; 2023 Community Science Museum</h5></footer>
 

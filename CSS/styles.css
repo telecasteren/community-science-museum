@@ -15,12 +15,11 @@ Code outside of media quiries written for sizes around 400px
 --------------------------------------------------------------------*/
 
 :root {
-  --orange: rgba(224, 151, 0, 1);
-  --dark-orange: rgba(212, 143, 1, 1);
+  --orange: #e09700;
+  --light-orange: #ffedc7;
+  --dark-orange: #d48f01;
   --white: #ffffff;
   --black: #000000;
-  --scrollbar-thumb: #888;
-  --scrollbar-track: #f0f0f0;
 }
 
 body {
@@ -186,7 +185,7 @@ Media queries for common code
 
 @media screen and (min-width: 395px) {
   h1 {
-    margin-top: 50px;
+    margin-top: 25px;
   }
 
   nav li {
@@ -198,9 +197,6 @@ Media queries for common code
 /*------------- min-width 600px START ------------*/
 
 @media screen and (min-width: 600px) {
-  h1 {
-    margin-top: 100px;
-  }
   nav li {
     margin-right: 60px;
     font-size: 22px;
@@ -239,14 +235,9 @@ Media queries for common code
     color: rgba(212, 143, 1, 1);
   }
 
-  /*.explore-btn a:hover {
-    color: rgba(212, 143, 1, 1);
-  }*/
-
   .museum-logo img {
     width: 460px;
     height: auto;
-    margin-left: 45px;
     margin-bottom: 50px;
     margin-top: 50px;
   }
@@ -259,10 +250,6 @@ Media queries for common code
 
 /*------------------------------- min-width 1000px START -------------------------------------*/
 @media screen and (min-width: 1000px) {
-  h1 {
-    margin-top: 150px;
-  }
-
   .nav-bar {
     font-size: larger;
   }
@@ -292,13 +279,12 @@ Media queries for common code
 
 /*------------------------------- min-width 1000px END -------------------------------------*/
 
+/*- MAX-WIDTH -*/
 @media screen and (max-width: 390px) {
   footer h5 {
     font-size: 12px;
   }
 }
-
-/*- MAX-WIDTH -*/
 
 @media screen and (max-width: 395px) {
   h1 {
