@@ -103,6 +103,7 @@ nav li:hover {
   transition: 0.5s;
   display: grid;
   justify-self: center;
+  cursor: pointer;
 }
 
 .explore-btn {
@@ -116,6 +117,7 @@ nav li:hover {
   margin-bottom: 50px;
   justify-self: center;
   color: var(--white);
+  cursor: pointer;
 }
 
 div.museum-logo {
