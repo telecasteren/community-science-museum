@@ -288,6 +288,12 @@ Media queries for larger screens
     height: 45px;
   }
 
+  #submit-btn:hover,
+  #submit-btn a:hover {
+    background-color: var(--white);
+    color: var(--dark-orange);
+  }
+
   label {
     font-size: 30px;
   }
