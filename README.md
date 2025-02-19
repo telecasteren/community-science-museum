@@ -32,7 +32,7 @@ You are welcome to contribute to this project. The only requirements is that you
 
 **Known areas for improvements:**
 
-- Performance (image size ≈ 200kb)
+- Accessibility, form and li element proper syntax structures
 - Simplifying and strengthening CSS styling and responsiveness
 - Separating text content concerns from HTML structure
 - Converting static HTML content to dynamic javascript

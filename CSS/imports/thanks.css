@@ -1,9 +1,9 @@
-@import url(styles.css);
-@import url(index.css);
-@import url(about.css);
-@import url(visit.css);
-@import url(explore.css);
-@import url(exhibitions.css);
+@import url(/CSS/styles.css);
+@import url(/CSS/imports/home.css);
+@import url(/CSS/imports/about.css);
+@import url(/CSS/imports/visit.css);
+@import url(/CSS/imports/explore.css);
+@import url(/CSS/imports/exhibitions.css);
 
 /*------------------------------------
 'Thank you for your inquiery' page styles
