@@ -1,6 +1,6 @@
 # Community Science Museum
 
-![image](images/semesterProj1-screenshot.png)
+![image](images/semesterProj1-screenshot.webp)
 
 **Deployed website:** [Community Science Museum](https://telecasteren-semester1.netlify.app/)<br/>
 A pure vanilla HTML and CSS website I designed and built during my first semester at Noroff School of Technology and Digital Media.
