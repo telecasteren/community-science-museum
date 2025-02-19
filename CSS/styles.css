@@ -2,16 +2,16 @@
 Global styles
 --------------------------------*/
 
-@import url(index.css);
-@import url(about.css);
-@import url(visit.css);
-@import url(explore.css);
-@import url(exhibitions.css);
-@import url(thanks.css);
+@import url(/CSS/imports/home.css);
+@import url(/CSS/imports/about.css);
+@import url(/CSS/imports/visit.css);
+@import url(/CSS/imports/explore.css);
+@import url(/CSS/imports/exhibitions.css);
+@import url(/CSS/imports/thanks.css);
 
 /*-----------------------------------------------------------------
 Media queries at the bottom of each sheet in order
-Code outside of media quiries written for sizes around 400px
+Code outside of media queries written for sizes around 400px
 --------------------------------------------------------------------*/
 
 :root {

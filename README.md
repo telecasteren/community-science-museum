@@ -3,11 +3,11 @@
 ![image](images/semesterProj1-screenshot.png)
 
 **Deployed website:** [Community Science Museum](https://telecasteren-semester1.netlify.app/)<br/>
-A pure vanilla HTML and CSS website I designed and built during my first semester at Noroff School of Technology.
+A pure vanilla HTML and CSS website I designed and built during my first semester at Noroff School of Technology and Digital Media.
 
 ## Description
 
-ADD DESC HERE
+This is the website for the vibrant family museum, Community Science Museum. It was originally built with vanilla HTML and CSS, following a school provided brief with content instructions. The website will give a feeling of what kind of museum Community Science Museum is, and be informative towards its guests on what events are one and how to find them. The sites client segment are elder children and families.
 
 ## Built With
 
@@ -32,7 +32,10 @@ You are welcome to contribute to this project. The only requirements is that you
 
 **Known areas for improvements:**
 
-- Performance
+- Performance (image size ≈ 200kb)
+- Simplifying and strengthening CSS styling and responsiveness
+- Separating text content concerns from HTML structure
+- Converting static HTML content to dynamic javascript
 
 ## Contact
 
@@ -44,7 +47,3 @@ You are welcome to contribute to this project. The only requirements is that you
 
 - [My portfolio page](https://tcn-portfolio.netlify.app/)
 - [My website - telecasternilsen](https://telecasternilsen.netlify.app/)
-
-## Acknowledgments
-
-- ADD SOMETHING NICE ABOUT SOMEONE HERE
