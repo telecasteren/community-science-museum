@@ -47,3 +47,16 @@ You are welcome to contribute to this project. The only requirements is that you
 
 - [My portfolio page](https://tcn-portfolio.netlify.app/)
 - [My website - telecasternilsen](https://telecasternilsen.netlify.app/)
+
+## Acknowledgements
+
+### Images on /navigate/exhibitions/index.html page:
+
+**Blue planet:**
+Photo by <a href="https://unsplash.com/@simonppt?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">SIMON LEE</a> on <a href="https://unsplash.com/photos/a-picture-of-the-earth-taken-from-space-nVghQWPCRbI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+
+**Red planet:**
+Photo by <a href="https://unsplash.com/@planetvolumes?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Planet Volumes</a> on <a href="https://unsplash.com/photos/a-close-up-of-a-planet-with-a-black-background-awYEQyYdHVE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+
+**Galileo Galilei:**<br/>
+Photo downloaded from https://www.worldhistory.org/image/17766/galileo-demonstrating-his-telescope/
