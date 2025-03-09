@@ -38,14 +38,14 @@ You are welcome to contribute to this project. The only requirements is that you
 
 ## Contact
 
-- [My website - telecasternilsen](https://telecasternilsen.netlify.app/)
+- [telecasternilsen](https://telecasteren.github.io/)
 - [GitHub profile](https://github.com/telecasteren)
 - [LinkedIn profile](https://www.linkedin.com/in/tele-caster-nilsen-7002b9249/)
 
 ## Some of my other work
 
-- [My portfolio page](https://tcn-portfolio.netlify.app/)
-- [My website - telecasternilsen](https://telecasternilsen.netlify.app/)
+- [My portfolio](https://telecasteren.github.io/)
+- [My website](https://telecasternilsen.netlify.app/)
 
 ## Acknowledgements
 
