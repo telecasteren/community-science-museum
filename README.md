@@ -9,11 +9,10 @@ A pure vanilla HTML and CSS website I designed and built during my first semeste
 
 This is the website for the vibrant family museum, Community Science Museum. It was originally built with vanilla HTML and CSS, following a school provided brief with content instructions. The website will give a feeling of what kind of museum Community Science Museum is, and be informative towards its guests on what events are one and how to find them. The sites client segment are elder children and families.
 
-## Built With
+## Built With Vanilla
 
 - HTML
 - CSS
-- **IDE:** Visual Studio Code
 
 ## Installing and running
 
